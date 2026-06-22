@@ -53,9 +53,18 @@
             Seja bem-vindo ao meu novo blog! Aqui vou compartilhar
             conhecimentos de programação, dicas da área de tecnologia
             e muito mais.</p>
-            <button>🎸 0</button>
+            <button>🎸 <span>0</span></button>
         </div>
     </main>
 
 </body>
+<script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click", botaoClicado);
+
+    function botaoClicado(){
+        console.log("fui clicado");
+    }
+
+</script>
 </html>

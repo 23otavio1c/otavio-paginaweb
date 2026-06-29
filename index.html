@@ -58,8 +58,8 @@
                 e muito mais.
             </p>
 
-            <button>🎸 <span>0</span></button>
-            <button>🎸🔥 <span>0</span></button>
+            <button>💻 <span>0</span></button>
+            <button>🔥 <span>0</span></button>
         </div>
 
         <hr>
@@ -88,7 +88,18 @@
         botoes.forEach(botao => {
             botao.addEventListener("click", function () {
                 const span = botao.querySelector("span");
-                span.textContent = Number(span.textContent) + 1;
+
+                let valor = Number(span.textContent);
+
+                if (botao.textContent.includes("💻")) {
+                    span.textContent = valor + 1; // like
+                } 
+                else if (botao.textContent.includes("🔥")) {
+                    span.textContent = valor - 1; // dislike
+                } 
+                else {
+                    span.textContent = valor + 1;
+                }
             });
         });
     </script>

@@ -34,19 +34,6 @@
             font-style: italic;
             color: #666;
         }
-
-        img {
-            width: 100%;
-            border-radius: 8px;
-        }
-
-        button {
-            margin-top: 10px;
-            margin-right: 10px;
-            padding: 10px 15px;
-            font-size: 16px;
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -78,13 +65,11 @@
         const botoes = document.querySelectorAll("button");
 
         botoes.forEach(botao => {
-            botao.addEventListener("click", botaoClicado);
+            botao.addEventListener("click", function () {
+                const span = botao.querySelector("span");
+                span.textContent = Number(span.textContent) + 1;
+            });
         });
-
-        function botaoClicado(event) {
-            const span = event.currentTarget.querySelector("span");
-            span.textContent = Number(span.textContent) + 1;
-        }
     </script>
 
 </body>

@@ -34,7 +34,19 @@
             font-style: italic;
             color: #666;
         }
-        
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        button {
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -46,28 +58,34 @@
 
     <main>
         <img src="download (1).jpeg" alt="Bocchi tocando guitarra">
+
         <div>
-        <h2>Meu Primeiro Post</h2>
-        <p class="autor">Por: Otávio Henrique Pereira</p>
-        <p>
-            Seja bem-vindo ao meu novo blog! Aqui vou compartilhar
-            conhecimentos de programação, dicas da área de tecnologia
-            e muito mais.</p>
+            <h2>Meu Primeiro Post</h2>
+            <p class="autor">Por: Otávio Henrique Pereira</p>
+
+            <p>
+                Seja bem-vindo ao meu novo blog! Aqui vou compartilhar
+                conhecimentos de programação, dicas da área de tecnologia
+                e muito mais.
+            </p>
+
             <button>🎸 <span>0</span></button>
             <button>🎸💔 <span>0</span></button>
         </div>
     </main>
 
+    <script>
+        const botoes = document.querySelectorAll("button");
+
+        botoes.forEach(botao => {
+            botao.addEventListener("click", botaoClicado);
+        });
+
+        function botaoClicado(event) {
+            const span = event.currentTarget.querySelector("span");
+            span.textContent = Number(span.textContent) + 1;
+        }
+    </script>
+
 </body>
-<script>
-    const botao = document.querySelectorAll("button");
-    botao.addEventListener("click", botaoClicado);
-
-    function botaoClicado(){
-        console.log("fui clicado");
-        let texto = botao.querySelector("span");
-        texto.textContent++;
-    }
-
-</script>
 </html>

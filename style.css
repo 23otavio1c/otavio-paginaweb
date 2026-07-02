@@ -1,0 +1,29 @@
+  body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: aqua;
+            text-align: center;
+            padding: 20px;
+        }
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .autor {
+            font-style: italic;
+            color: #666;
+        }
+        /* Um estilo simples para mostrar visualmente quando o botão está ativo */
+        button.ativo {
+            background-color: #ddd;
+            border-color: #999;
+        }

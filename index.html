@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Tech</title>
-
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             background-color: #f4f4f4;
         }
-
         header {
             background-color: aqua;
             text-align: center;
             padding: 20px;
         }
-
         main {
             max-width: 800px;
             margin: 20px auto;
@@ -25,11 +22,9 @@
             background-color: white;
             border-radius: 8px;
         }
-
         h1, h2 {
             color: #333;
         }
-
         .autor {
             font-style: italic;
             color: #666;
@@ -37,72 +32,52 @@
     </style>
 </head>
 <body>
-
     <header>
         <h1>Blog Tech</h1>
         <p>Vou compartilhar conhecimentos sobre tecnologia e programação.</p>
     </header>
-
     <main>
-
-        <!-- POST 1 -->
         <div>
             <img src="download (1).jpeg" alt="Bocchi tocando guitarra">
-
             <h2>Meu Primeiro Post</h2>
             <p class="autor">Por: Otávio Henrique Pereira</p>
-
             <p>
                 Seja bem-vindo ao meu novo blog! Aqui vou compartilhar
                 conhecimentos de programação, dicas da área de tecnologia
                 e muito mais.
             </p>
-
             <button>💻 <span>0</span></button>
             <button>🔥 <span>0</span></button>
         </div>
-
         <hr>
-
-        <!-- POST 2 -->
         <div>
             <img src="download.jpeg" alt="Bocchi tocando guitarra">
-
             <h2>Segundo Post</h2>
             <p class="autor">Por: Otávio Henrique Pereira</p>
-
             <p>
                 Este é o meu segundo post no blog! Estou praticando HTML, CSS e JavaScript
                 para criar páginas cada vez melhores.
             </p>
-
             <button>💻 <span>0</span></button>
             <button>🔥 <span>0</span></button>
         </div>
-
     </main>
-
     <script>
         const botoes = document.querySelectorAll("button");
-
         botoes.forEach(botao => {
             botao.addEventListener("click", function () {
                 const span = botao.querySelector("span");
-
                 let valor = Number(span.textContent);
-
-                if (botao.textContent.includes("💻")) {
+                
+                // .innerHTML verifica o emoji e a estrutura interna sem misturar com o número do span
+                if (botao.innerHTML.includes("💻")) {
                     span.textContent = valor + 1; // like
                 } 
-                else if (botao.textContent.includes("🔥")) {
-                    span.textContent = valor - 1; // dislike
-                } 
-                else {
-                    span.textContent = valor + 1;
+                else if (botao.innerHTML.includes("🔥")) {
+                    span.textContent = valor + 1; // dislike (agora soma os votos de dislike individualmente)
                 }
             });
         });
     </script>
-
 </body>
 </html>

@@ -18,15 +18,14 @@ main {
     border-radius: 8px;
 }
 
-/* Elementos posicionados lado a lado */
 article {
     display: flex;
-    flex-direction: row;     /* Coloca os itens na horizontal */
-    align-items: center;     /* Alinha os itens centralizados na altura */
-    flex-wrap: wrap;         /* Impede que o conteúdo vaze em telas menores */
+    flex-direction: row;      /* Garante que fiquem lado a lado */
+    justify-content: center;  /* Centraliza no meio (horizontal) */
+    align-items: center;      /* Centraliza no meio (vertical) */
     border: 1px solid #183C63;
     margin: 16px;
-    gap: 16px;              /* Espaço de 16px entre cada elemento */
+    gap: 16px;               /* Espaço entre os itens lado a lado */
     padding: 16px;
     border-radius: 6px;
 }

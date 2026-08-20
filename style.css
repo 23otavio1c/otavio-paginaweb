@@ -1,52 +1,27 @@
 body {
-    max-width: 100%;
-    margin: 0;
+    max-width: 100vw;
 }
-
-header {
-    background-color: aqua;
-    text-align: center;
-    padding: 20px;
+head{
+ background-color: rgb(55, 0, 255);
+color: #149cdb;
+margin: 0 auto;
+padding: 16px;
 }
-
-main {
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 8px;
-
-    display: flex;
-    flex-wrap: wrap;
+main{
+background-color: rgb(55, 0, 255);
+color: #149cdb;
+margin: 0 auto;
+padding: 16px;
 }
-
 article {
     display: flex;
-
-    border: 1px solid red;
-
+    border: 1px solid #183C63;
     margin: 16px;
-    gap: 16px;  
+    gap: 16px;
     padding: 16px;
-
     flex: 1 1 25%;
-}
-
-img {
-    width: 80px;
-    height: 80px;
-}
-
-h1, h2 {
-    color: #333;
-    margin: 0;
-}
-
-.autor {
-    font-style: italic;
-    color: #666;
-}
-
-button.ativo {
-    background-color: #ddd;
-    border-color: #999;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
 }

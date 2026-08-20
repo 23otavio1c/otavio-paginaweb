@@ -29,5 +29,20 @@ article {
     justify-content: center;
 }
 img{
-    width: 106px;
+    width: 90px;
+    height: 90px;
+}
+h1, h2 {
+    color: #333;
+    margin: 0;
+}
+
+.autor {
+    font-style: italic;
+    color: #666;
+}
+
+button.ativo {
+    background-color: #ddd;
+    border-color: #999;
 }

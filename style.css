@@ -12,6 +12,8 @@ background-color: rgb(55, 0, 255);
 color: #149cdb;
 margin: 0 auto;
 padding: 16px;
+
+display: flex;
 }
 article {
     display: flex;
@@ -24,4 +26,7 @@ article {
     align-items: center;
     text-align: center;
     justify-content: center;
+}
+img{
+    width: 80px;
 }

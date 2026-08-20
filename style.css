@@ -1,49 +1,88 @@
 
 body {
+    margin: 0;
     max-width: 100vw;
+    font-family: Arial, sans-serif;
+    background-color: #eaf2ff;
 }
 
+/* Cabeçalho */
 header {
     background-color: rgba(62, 139, 255, 0.932);
-    color: #1f00a8;
+    color: white;
     margin: 0 auto;
     padding: 16px;
+    text-align: center;
 }
 
+header h1 {
+    color: white;
+    margin: 0;
+}
+
+/* Área dos posts */
 main {
-    background-color: rgba(62, 139, 255, 0.932);
-    color: #1f00a8;
+    background-color: #eaf2ff;
     margin: 0 auto;
     padding: 16px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
+/* Posts */
 article {
+    background-color: white;
     display: flex;
     border: 1px solid #1a10a5;
+    border-radius: 12px;
     margin: 16px;
     gap: 16px;
     padding: 16px;
     flex: 1 1 25%;
+    max-width: 360px;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    justify-content: center;
 }
 
+/* Imagens */
 img {
     width: 90px;
     height: 90px;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
+/* Títulos */
 h1, h2 {
     color: #333;
     margin: 0;
 }
 
+/* Autor */
 .autor {
     font-style: italic;
     color: #666;
+}
+
+/* Fonte */
+.artigo-fonte {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Botões */
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    background-color: #e5edff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+button:hover {
+    background-color: #c9d9ff;
 }
 

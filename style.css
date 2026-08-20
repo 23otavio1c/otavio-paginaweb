@@ -14,10 +14,11 @@ margin: 0 auto;
 padding: 16px;
 
 display: flex;
+flex-wrap: wrap;
 }
 article {
     display: flex;
-    border: 1px solid #183C63;
+    border: 1px solid #1a10a5;
     margin: 16px;
     gap: 16px;
     padding: 16px;

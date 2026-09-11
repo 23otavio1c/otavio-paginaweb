@@ -16,8 +16,8 @@ body {
 
 /* Cabeçalho */
 header {
-    background-color: rgba(62, 139, 255, 0.932);
-    color: white;
+    background-color: var(--cor-principal);
+    color: var(--cor-contraste);
     margin: 0 auto;
     padding: 16px;
     text-align: center;
@@ -30,7 +30,8 @@ header h1 {
 
 /* Área dos posts */
 main {
-    background-color: #eaf2ff;
+    background-color: var(--cor-fundo);
+    color: var(--cor-principal);
     margin: 0 auto;
     padding: 16px;
     display: flex;
@@ -42,7 +43,7 @@ main {
 article {
     background-color: white;
     display: flex;
-    border: 1px solid #1a10a5;
+    border: 1px solid var(--cor-principal);
     border-radius: 12px;
     margin: 16px;
     gap: 16px;

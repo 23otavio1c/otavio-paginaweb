@@ -1,3 +1,11 @@
+:root {
+    --cor-principal:rgba(62, 139, 255, 0.932);
+    --segunda-cor: #1e7de9d3;
+    --cor-fundo: #ffffff;
+    --cor-texto: black;
+    --cor-contraste: white;
+    --cor-botao: white;
+}
 
 body {
     margin: 0;

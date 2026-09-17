@@ -25,6 +25,10 @@
     --cor-botao-texto: #ffffff;
 }
 
+.tema-escuro a {
+    color: var(--segunda-cor);
+}
+
 * {
     box-sizing: border-box;
 }

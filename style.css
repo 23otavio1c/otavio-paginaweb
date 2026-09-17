@@ -35,6 +35,10 @@
     box-sizing: border-box;
 }
 
+.tema-escuro .btn-tema-escuro{
+    background-color: var(--cor-principal);
+}
+
 body {
     margin: 0;
     width: 100%;

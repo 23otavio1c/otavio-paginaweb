@@ -125,3 +125,7 @@ button {
 button:hover {
     background-color: var(--cor-botao-hover);
 }
+
+.btn-tema-escuro{
+    position: fixed;
+}

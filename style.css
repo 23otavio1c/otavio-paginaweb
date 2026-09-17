@@ -7,6 +7,16 @@
     --cor-botao: white;
 }
 
+.tema-escuro{
+    --cor-principal:rgb(50, 57, 150);
+    --segunda-cor: #9488ffd3;
+    --cor-fundo: #11005a;
+    --cor-texto: rgb(255, 255, 255);
+    --cor-contraste: rgb(87, 0, 0);
+    --cor-botao: white;  
+}
+
+
 body {
     margin: 0;
     max-width: 100vw;

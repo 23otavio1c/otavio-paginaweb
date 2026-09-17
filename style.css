@@ -9,6 +9,8 @@
     --cor-botao-fundo: #e5edff;
     --cor-botao-hover: #c9d9ff;
     --cor-botao-texto: #000000;
+
+    --fonte-texto: Arial, sans-serif;
 }
 
 /* Tema Azul Escuro */
@@ -36,7 +38,7 @@
 body {
     margin: 0;
     width: 100%;
-    font-family: Arial, sans-serif;
+    font-family: var(--fonte-texto);
     background-color: var(--cor-fundo);
     color: var(--cor-texto);
 }

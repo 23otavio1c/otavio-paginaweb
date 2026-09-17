@@ -1,27 +1,40 @@
 :root {
-    --cor-principal:rgba(62, 139, 255, 0.932);
+    --cor-principal: rgba(62, 139, 255, 0.932);
     --segunda-cor: #1e7de9d3;
     --cor-fundo: #ffffff;
-    --cor-texto: black;
-    --cor-contraste: white;
-    --cor-botao: white;
+    --cor-texto: #000000;
+    --cor-contraste: #ffffff;
+    --cor-card-fundo: #ffffff;
+    --cor-texto-secundario: #666666;
+    --cor-botao-fundo: #e5edff;
+    --cor-botao-hover: #c9d9ff;
+    --cor-botao-texto: #000000;
 }
 
-.tema-escuro{
-    --cor-principal:rgb(50, 57, 150);
-    --segunda-cor: #9488ffd3;
-    --cor-fundo: #11005a;
-    --cor-texto: rgb(255, 255, 255);
-    --cor-contraste: rgb(87, 0, 0);
-    --cor-botao: white;  
+/* Tema Azul Escuro */
+.tema-escuro {
+    --cor-principal: #1d4ed8;
+    --segunda-cor: #3b82f6;
+    --cor-fundo: #0f172a;
+    --cor-texto: #f8fafc;
+    --cor-contraste: #ffffff;
+    --cor-card-fundo: #1e293b;
+    --cor-texto-secundario: #94a3b8;
+    --cor-botao-fundo: #1e40af;
+    --cor-botao-hover: #1d4ed8;
+    --cor-botao-texto: #ffffff;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     margin: 0;
-    max-width: 100vw;
+    width: 100%;
     font-family: Arial, sans-serif;
-    background-color: var(--cor-fundo)
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
 }
 
 /* Cabeçalho */
@@ -34,14 +47,14 @@ header {
 }
 
 header h1 {
-    color: white;
+    color: var(--cor-contraste);
     margin: 0;
 }
 
 /* Área dos posts */
 main {
     background-color: var(--cor-fundo);
-    color: var(--cor-principal);
+    color: var(--cor-texto);
     margin: 0 auto;
     padding: 16px;
     display: flex;
@@ -51,14 +64,14 @@ main {
 
 /* Posts */
 article {
-    background-color: white;
+    background-color: var(--cor-card-fundo);
     display: flex;
     border: 1px solid var(--cor-principal);
     border-radius: 12px;
     margin: 16px;
     gap: 16px;
     padding: 16px;
-    flex: 1 1 25%;
+    flex: 1 1 250px;
     max-width: 360px;
     flex-direction: column;
     align-items: center;
@@ -75,20 +88,20 @@ img {
 
 /* Títulos */
 h1, h2 {
-    color: #333;
+    color: var(--cor-texto);
     margin: 0;
 }
 
 /* Autor */
 .autor {
     font-style: italic;
-    color: #666;
+    color: var(--cor-texto-secundario);
 }
 
 /* Fonte */
 .artigo-fonte {
     font-size: 14px;
-    color: #666;
+    color: var(--cor-texto-secundario);
 }
 
 /* Botões */
@@ -96,12 +109,13 @@ button {
     border: none;
     border-radius: 8px;
     padding: 10px 15px;
-    background-color: #e5edff;
+    background-color: var(--cor-botao-fundo);
+    color: var(--cor-botao-texto);
     cursor: pointer;
     font-size: 18px;
+    transition: background-color 0.2s;
 }
 
 button:hover {
-    background-color: #c9d9ff;
+    background-color: var(--cor-botao-hover);
 }
-
